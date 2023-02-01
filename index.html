@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Henry's Personal Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Henry Zhang" >
+    <link rel="stylesheet" href="styles.css">
+    <script src="placeholder.js"></script>
+  </head>
+  <style>
+    .welcome {
+      background-color: rgb(178, 230, 173);
+    }
+  </style>
+  <body>
+    <header>
+      <div class="welcome">
+      <h1>Welcome!</h1>
+    </header>
+    <aside>
+      <ul>
+        <li><a href="projects.html">My Projects</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </aside>
+    <main>
+      <section>
+        <picture>
+          <source media="(min-width:400px)" srcset="profilepicture.jpeg">
+          <img src="profilepicture.jpeg" alt="A picture of myself">
+        </picture>
+        <br><br>
+        <p>Above was a <i>line break</i>. Hi, my name is <b>Henry Zhang</b> and I am a second year student at <span style="color:blue">UCSD</span>. I have experience with various 
+          programming languages and technologies and have worked on several projects. <strong>This website showcases my projects and skills</strong>. Please contact me for further inquiries. Additionally,
+          below is the best audio ever! Can you guess which character from Star Wars this is?
+        </p>
+        <audio controls>
+          <source src="r2d2.mp3" type="audio/mp3">
+          Unfortunately, your browser does not support the audio tag so you can't hear this beautfiul audio.
+        </audio>
+
+        <p>
+          Before we get into my technical skills, below is a list of technologies that I hope to learn in the future:
+        </p>
+        <ol>
+          <li>React</li>
+          <li>Rust</li>
+          <li>Golang</li>
+          <li>Pytorch</li>
+          <li>SQL</li>
+        </ol>
+      </section>
+      <section>
+        <h2>Technical Skills</h2>
+        <table>
+          <caption>Languages!</caption>
+          <colgroup>
+            <col span="2">
+          </colgroup>
+          <tr>
+            <th>Technology</th>
+            <th>Proficiency</th>
+          </tr>
+          <tr>
+            <td><code>Java</code></td>
+            <td>Intermediate</td>
+          </tr>
+          <tr>
+            <td><code>JavaScript</code></td>
+            <td>Intermediate</td>
+          </tr>
+          <tr>
+            <td><code>Python</code></td>
+            <td>Intermediate</td>
+          </tr>
+          <tr>
+            <td><code>CSS</code></td>
+            <td>none</td>
+          </tr>
+          <tr>
+            <td><code>HTML</code></td>
+            <td>meh</td>
+          </tr>
+        </table>
+      </section>
+      <section>
+        <h2>My ongoing Experiments! :)</h2>
+        <p>I want to test out the template tag, the canvas tag, and the script tag, but I can't use JavaScript so I am guessing the template tag won't show up!!! However, because
+          of the exception with the script tag, I can luckily show off this cool canvas tag!
+        </p>
+        <template>
+          <h2>New Template</h2>
+        </template>
+        <canvas id="myCanvas">Your browser does not support the canvas tag.</canvas>
+        <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.fillStyle = "#FFB6C1";
+        ctx.fillRect(0, 0, 200, 200);
+        </script>
+        <p>
+          Next I want to test the inline svg to see if I can just code an SVG! Additionally, I want to see if I can show a preview of Github on my site!
+        </p>
+        <svg>
+          <title>A nice circle to hold my icons!</title>
+          <circle cx="50" cy="50" r="30"/>
+        </svg>
+        <iframe src="https://github.com/henryzhang03" title="My github"></iframe>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; Henry Zhang 2023</p>
+    </footer>
+  </body>
+</html>
